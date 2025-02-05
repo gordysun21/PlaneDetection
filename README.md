@@ -1,1 +1,5 @@
-PlaneDetection
+PlaneDetection - Airplane identification system based on Arduino, Meta Wayfarers, FlightRadar24 API, and YOLO
+
+PlaneDetection uses an Arduino R4 Uno WiFi strapped to the side of the Meta Wayfarers to collect data information. It contains a QMC5883L compass module, NEO-6M GPS module, and an MPU6050 accelerometer module. The Arduino transmits data to a computer via a hosted WiFi network that passes live information through a secure channel. A complementary filter is also applied to the compass module with the accelerometer module to ensure accurate readings within the Wayfarers' magnetic field. The code for the Arduino is written in C++ while the communication with computer is facilitated in Python.
+
+The data is then processed through a Python project that calls the FlightRadar24 API looking for suitable plane candidates in a certain scope the user is looking at. This is done through trigonometric analysis of the user's relative position to a group of airplanes and the code min-maxes to determine the most matching plane. It also utilizes a YOLO model trained on a public dataset of airplanes to identify the location of the plane relative to the cameras on the Wayfarers. Using that information, it further calibrates orientation and angle data to ensure the most accurate match.
