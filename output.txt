@@ -1,0 +1,5 @@
+(b'{"data":[{"fr24_id":"37d70bbf","flight":"FX903","callsign":"FDX903","lat":37'
+ b'.71655,"lon":-122.21851,"track":345,"alt":0,"gspeed":0,"vspeed":0,"squawk":"'
+ b'1577","timestamp":"2024-11-04T07:35:02Z","source":"ADSB","hex":"A79DE9","typ'
+ b'e":"MD11","reg":"N590FE","painted_as":"FDX","operating_as":"FDX","orig_iata"'
+ b':"OAK","orig_icao":"KOAK","dest_iata":null,"dest_icao":null,"eta":null}]}')
