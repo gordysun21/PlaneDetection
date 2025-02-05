@@ -1,7 +1,7 @@
 #Live Key ****************************************************************
 #Sandbox Key ****************************************************************
 import requests
-from userinfostuff.get_user_seen_coordinates import *
+from userinfostuff.get_user_seen_coordinates_html import *
 
 def getFlight(userBounds):
     url = 'https://fr24api.flightradar24.com/api/live/flight-positions/full?bounds='

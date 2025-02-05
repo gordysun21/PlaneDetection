@@ -4,7 +4,7 @@ model = YOLO('yolov8n.pt')
 
 model.train(
     data='yolo_dataset/dataset.yaml',
-    epochs=50,
+    epochs=1,
     batch=16,
     imgsz=640,
     device='cpu'
@@ -12,4 +12,4 @@ model.train(
 
 model.export(format='onnx')
 results = model('yolostuff/test.jpg')
-results.show()
+results[0].show()
