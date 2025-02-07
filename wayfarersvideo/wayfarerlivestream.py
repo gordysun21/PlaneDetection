@@ -70,7 +70,7 @@ def monitor_screen(region):
         cv2.destroyAllWindows()
 
 # Define the region to monitor (left, top, right, bottom)
-region_to_monitor = (629, 190, 1053, 931)
+region_to_monitor = (31, 183, 435, 905)
 
 # Start monitoring
 monitor_screen(region=region_to_monitor)
